@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #000;
+}
+/*header*/
+header{
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+header1{
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+header p{
+    font-size: 16px;
+}
+
+/*Navigation*/
+
+    nav{
+    background-color: #000;
+    text-align: center;
+    padding: 16px;
+}
+nav button{
+    background-color:white;
+    color: #000;
+    border: 2px solid #ffff;
+    padding: 10px 18px;
+    margin: 5px;
+    cursor: pointer;
+    font-size:15px;
+    transition:0,3s;
+}
+nav 
+button:hover {
+    background-color: #000;
+    color: #ffff;
+}
+
+/*Main*/
+main{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+/*Headings*/
+
+h2{
+    margin-bottom: 25px;
+    border: bottom 3px #000;
+    padding-bottom: 10px;
+}
+h3{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+/*hidden sections*/
+.hidden{
+    display: none;
+}
+/*Dashboard boxes*/
+
+.dashboard-boxes{
+display:flex;
+gap: 20px;
+flex-wrap: wrap;
+margin-bottom: 30px;
+
+}
+.dashboard-box{
+    flex: 1;
+    min-width: 200px;
+    border: #000 2px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffff;
+}
+.dashboard-box h3{
+    margin-top: 0;
+}
+.dashboard-box p{
+    font-size: 30px;
+    font-weight: bold;
+}
+/*Forms*/
+.form-box{
+    border: #000 2px solid;
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #ffff;
+}
+input,select{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: #000 2px solid;
+    background-color: #ffff;
+    color: #ffff;
+    font-size: 15px;
+}
+/*buttons*/
+button{
+    background-color: #000;
+    color: #ffff;
+    border: #000 2px solid;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 14px;
+    transition: 0.3;
+}
+button:hover{
+    background-color: #ffff;
+    color: #000;
+}
+/*Table*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+table,th,td{
+    border: 1px solid black;
+}
+th{
+    background-color: #000;
+    color: #ffff;
+    padding: 12px;
+}
+td{
+    padding: 10px;
+    text-align: center;
+}
+/*low stock*/
+footer{
+    background-color: #000;
+    color: #ffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+/*Mobile*/
+@media screen and (max-width:600px) {
+    main{
+        width: 95%;
+    }
+    header h1{
+        font-size: 20px;
+    }
+    table{
+        font-size: 12px;
+    }
+    th,td{
+        padding: 6px;
+    }
+    nav button{
+        width: 90%;
+    }
+}
+/*Making form input text visible*/
+input,select{
+    color: black;
+    background-color:white;
+    border: 1px solid #333;
+
+    input::placeholder{
+    color:#777;
+    }
+}
